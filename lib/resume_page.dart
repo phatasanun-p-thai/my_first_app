@@ -315,13 +315,15 @@ class _SectionCard extends StatelessWidget {
                 child: Icon(icon, size: 19, color: ResumeColors.accent),
               ),
               const SizedBox(width: 12),
-              Text(
-                title,
-                style: const TextStyle(
-                  fontFamily: 'Sora',
-                  fontSize: 19,
-                  fontWeight: FontWeight.w700,
-                  color: ResumeColors.textPrimary,
+              Expanded(
+                child: Text(
+                  title,
+                  style: const TextStyle(
+                    fontFamily: 'Sora',
+                    fontSize: 19,
+                    fontWeight: FontWeight.w700,
+                    color: ResumeColors.textPrimary,
+                  ),
                 ),
               ),
             ],
@@ -417,13 +419,15 @@ class _EducationTimeline extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(width: 8),
-                            Text(
-                              edu.school,
-                              textAlign: TextAlign.right,
-                              style: const TextStyle(
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.w600,
-                                color: ResumeColors.textSecondary,
+                            Flexible(
+                              child: Text(
+                                edu.school,
+                                textAlign: TextAlign.right,
+                                style: const TextStyle(
+                                  fontSize: 12.5,
+                                  fontWeight: FontWeight.w600,
+                                  color: ResumeColors.textSecondary,
+                                ),
                               ),
                             ),
                           ],
@@ -526,14 +530,17 @@ class _SkillBar extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                skill.name,
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: ResumeColors.textPrimary,
+              Expanded(
+                child: Text(
+                  skill.name,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: ResumeColors.textPrimary,
+                  ),
                 ),
               ),
+              const SizedBox(width: 8),
               Text(
                 '${skill.level}%',
                 style: const TextStyle(
