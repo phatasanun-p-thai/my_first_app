@@ -186,6 +186,11 @@ const resumeData = ResumeData(
       level: 90,
       category: 'Soft Skills',
     ),
+    Skill(
+      name: 'Prompt AI',
+      level: 70,
+      category: 'Soft Skills',
+    ),
   ],
   experience: [
     Experience(
